@@ -1,0 +1,176 @@
+import java.util.*;
+import java.text.DecimalFormat; 
+public class CurrencyConvert {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		double amount; 
+		double rupee, dollar, pound, euro, yen, ringgit, won; 
+		int choice;
+		
+		DecimalFormat f = new DecimalFormat("##.##"); 
+		
+		Scanner sc = new Scanner(System.in); 
+		
+		System.out.println("The choices are: "); 
+		System.out.println("Enter 1: Rupee "); 
+		System.out.println("Enter 2: Dollar "); 
+		System.out.println("Enter 3: Pound "); 
+		System.out.println("Enter 4: Euro "); 
+		System.out.println("Enter 5: Yen "); 
+		System.out.println("Enter 6: Ringgit "); 
+		System.out.println("Enter 7: Won "); 
+		
+		System.out.println("\nChoose from the above options: ");
+		choice = sc.nextInt(); 
+		
+		System.out.println("Enter the amount you would like to convert."); 
+		amount = sc.nextFloat(); 
+		
+		switch (choice)
+		{
+		case 1: //Rupee
+			dollar = amount/79.89; 
+			System.out.println(amount + " Rupee = " + f.format(dollar)+ " Dollars"); 
+			
+			pound = amount/95.51; 
+			System.out.println(amount + " Rupee = " + f.format(pound)+ " Pounds"); 
+			
+			euro = amount/81.35; 
+			System.out.println(amount + " Rupee = " + f.format(euro) + " Euros"); 
+			
+			yen = amount/0.58; 
+			System.out.println(amount + " Rupee = " + f.format(yen) + " Yen"); 
+			
+			ringgit = amount/17.91; 
+			System.out.println(amount + " Rupee = " + f.format(ringgit) + " Ringgit"); 
+			
+			won = amount/0.061; 
+			System.out.println(amount + " Rupee = " + f.format(won) + " Won"); 
+			break; 
+			
+		case 2: //Dollar
+			rupee = amount*79.89; 
+			System.out.println(amount + " Dollar= " + f.format(rupee) + " Rupees"); 
+			
+			pound = amount*0.84; 
+			System.out.println(amount + " Dollar= " + f.format(pound) + " Pounds"); 
+			
+			euro = amount*0.98; 
+			System.out.println(amount + " Dollar= " + f.format(euro) + " Euros"); 
+			
+			yen = amount*137.87; 
+			System.out.println(amount + " Dollar= " + f.format(yen) + " Yen"); 
+			
+			ringgit = amount*4.46; 
+			System.out.println(amount + " Dollar= " + f.format(ringgit) + " Ringgit"); 
+			
+			won = amount*1313.36; 
+			System.out.println(amount + " Dollar= " + f.format(won) + " Won"); 
+			break; 
+			
+		case 3: //Pound
+			rupee = amount*95.49; 
+			System.out.println(amount + " Pound= " + f.format(rupee) + " Rupees"); 
+			
+			dollar = amount*1.20; 
+			System.out.println(amount + " Pound= " + f.format(dollar) + " Dollars");
+			
+			euro = amount*1.17; 
+			System.out.println(amount + " Pound= " + f.format(euro) + " Euros");
+			
+			yen = amount*164.94; 
+			System.out.println(amount + " Pound= " + f.format(yen) + " Yen");
+			
+			ringgit = amount*5.33; 
+			System.out.println(amount + " Pound= " + f.format(ringgit) + " Ringgit");
+			
+			won = amount*1569.89; 
+			System.out.println(amount + " Pound= " + f.format(won) + " Won");
+			break; 
+			
+		case 4: //Euro
+			rupee = amount*81.41; 
+			System.out.println(amount + " Euro= " + f.format(rupee) + " Rupees");
+			
+			dollar = amount*1.02; 
+			System.out.println(amount + " Euro= " + f.format(dollar) + " Dollars");
+			
+			pound = amount*0.85; 
+			System.out.println(amount + " Euro= " + f.format(pound) + " Pounds");
+			
+			yen = amount*140.72; 
+			System.out.println(amount + " Euro= " + f.format(yen) + " Yen");
+			
+			ringgit = amount*4.54; 
+			System.out.println(amount + " Euro= " + f.format(ringgit) + " Ringgit");
+			
+			won = amount*1338.82; 
+			System.out.println(amount + " Euro= " + f.format(won) + " Won");
+			
+		case 5: //Yen
+			rupee = amount*0.58; 
+			System.out.println(amount + " Yen= " + f.format(rupee) + " Rupees");
+			
+			dollar = amount*0.0072; 
+			System.out.println(amount + " Yen= " + f.format(dollar) + " Dollars");
+			
+			pound = amount*0.0061; 
+			System.out.println(amount + " Yen= " + f.format(pound) + " Pounds");
+			
+			euro = amount*0.0071; 
+			System.out.println(amount + " Yen= " + f.format(euro) + " Euros");
+			
+			ringgit = amount*0.032; 
+			System.out.println(amount + " Yen= " + f.format(ringgit) + " Ringgit");
+			
+			won = amount*9.52; 
+			System.out.println(amount + " Yen= " + f.format(won) + " Won");
+			
+		case 6: //Ringgit
+			rupee = amount*17.94; 
+			System.out.println(amount + " Ringgit= " + f.format(rupee) + " Rupees");
+			
+			dollar = amount*0.22; 
+			System.out.println(amount + " Ringgit= " + f.format(dollar) + " Dollars");
+			
+			pound = amount*0.19; 
+			System.out.println(amount + " Ringgit= " + f.format(pound) + " Pounds");
+			
+			euro = amount*0.22; 
+			System.out.println(amount + " Ringgit= " + f.format(euro) + " Euros");
+			
+			yen = amount*30.99; 
+			System.out.println(amount + " Ringgit= " + f.format(yen) + " Yen");
+			
+			won = amount*294.59; 
+			System.out.println(amount + " Ringgit= " + f.format(won) + " Won");
+			break; 
+			
+		case 7: //Won
+			rupee = amount/16.44; 
+			System.out.println(amount + " Won= " + f.format(rupee) + " Rupees");
+			
+			dollar = amount/1313.16; 
+			System.out.println(amount + " Won= " + f.format(dollar) + " Dollars");
+			
+			pound = amount/1569.60; 
+			System.out.println(amount + " Won= " + f.format(pound) + " Pounds");
+			
+			euro = amount/1336.83; 
+			System.out.println(amount + " Won= " + f.format(euro) + " Euros");
+			
+			yen = amount/9.52; 
+			System.out.println(amount + " Won= " + f.format(yen) + " Yen");
+			
+			ringgit = amount/294.66; 
+			System.out.println(amount + " Won= " + f.format(ringgit) + " Ringgit");
+			break;
+			
+			default: 
+				System.out.println("Invalid Entry"); 
+		}
+	}
+
+}
